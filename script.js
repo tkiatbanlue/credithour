@@ -141,8 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
         doc.setFont("Sarabun-Regular");
 
         // Course information
-        const courseNameLabel = currentLang === 'th' ? 'ชื่อหลักสูตร:' : 'Course Name:';
-        const courseCodeLabel = currentLang === 'th' ? 'รหัสหลักสูตร:' : 'Course Code:';
+        const courseNameLabel = currentLang === 'th' ? 'ชื่อวิชา:' : 'Course Name:';
+        const courseCodeLabel = currentLang === 'th' ? 'รหัสวิชา:' : 'Course Code:';
         const creditsLabel = currentLang === 'th' ? 'หน่วยกิต:' : 'Credits:';
         const studyWeeksLabel = currentLang === 'th' ? 'จำนวนสัปดาห์ที่เรียน:' : 'Number of Study Weeks:';
 
