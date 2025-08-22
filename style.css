@@ -1,0 +1,136 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+#lang-toggle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.activity-category {
+    margin-bottom: 20px;
+}
+
+.activity-category h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.activity {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.activity label {
+    font-weight: normal;
+}
+
+.activity input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#reset-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#pdf-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#summary-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.summary-item p:first-child {
+    font-weight: bold;
+}
+
+.goal-text {
+    font-size: 0.8em;
+    color: #888;
+    font-weight: normal;
+}
