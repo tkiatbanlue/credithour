@@ -32,8 +32,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const creditsInput = document.getElementById('credits');
     const studyWeeksInput = document.getElementById('study-weeks');
     const langToggleButton = document.getElementById('lang-toggle');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
 
     let currentLang = 'th';
+
+    // Check for saved dark mode preference
+    const savedDarkMode = localStorage.getItem('darkMode');
+    if (savedDarkMode === 'enabled') {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.textContent = '☀️';
+    }
+
+    // Dark mode toggle functionality
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        // Save preference to localStorage
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            darkModeToggle.textContent = '☀️';
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+            darkModeToggle.textContent = '🌙';
+        }
+    });
 
     const categories = {};
 
@@ -252,4 +274,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set initial language
     setLanguage(currentLang);
+    
+    // Set dark mode toggle icon based on current mode
+    if (document.body.classList.contains('dark-mode')) {
+        darkModeToggle.textContent = '☀️';
+    } else {
+        darkModeToggle.textContent = '🌙';
+    }
 });
